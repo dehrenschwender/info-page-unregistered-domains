@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why You Shouldn't Link to Unregistered Domains</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .risk {
+            background-color: #ffebee;
+            padding: 15px;
+            border-left: 4px solid #ff5252;
+            margin: 20px 0;
+        }
+        .recommendation {
+            background-color: #e8f5e9;
+            padding: 15px;
+            border-left: 4px solid #4caf50;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Why You Shouldn't Link to Unregistered Domains in Documentation</h1>
+
+        <h2>What are unregistered domains?</h2>
+        <p>
+            Unregistered domains are domain names that are not currently owned or registered by any individual or organization. Common examples include placeholder domains like example.com (although this is actually registered by IANA), company.internal, or mydomain.local.
+        </p>
+
+        <div class="risk">
+            <h2>Security Risks</h2>
+            <ul>
+                <li><strong>Domain Squatting:</strong> Malicious actors can register these domains and set up harmful content</li>
+                <li><strong>Phishing Attacks:</strong> Attackers can capture sensitive information through previously unregistered domains</li>
+                <li><strong>Data Leakage:</strong> Internal information might accidentally be sent to these domains</li>
+                <li><strong>DNS Hijacking:</strong> Potential for redirecting traffic to malicious sites</li>
+            </ul>
+        </div>
+
+        <h2>Additional Problems</h2>
+        <ul>
+            <li>Broken links in documentation</li>
+            <li>Confusion for users and developers</li>
+            <li>Potential security automation false positives</li>
+            <li>Maintenance overhead when domains change ownership</li>
+        </ul>
+
+        <div class="recommendation">
+            <h2>Best Practices</h2>
+            <ul>
+                <li>Use officially reserved domains (like example.com, example.org)</li>
+                <li>Use your organization's actual domains</li>
+                <li>Clearly mark placeholder URLs as examples</li>
+                <li>Regular review and updating of documentation links</li>
+                <li>Use internal DNS names only for internal documentation</li>
+            </ul>
+        </div>
+
+        <h2>Conclusion</h2>
+        <p>
+            Using unregistered domains in documentation poses unnecessary security risks and can lead to maintenance issues. Always use officially reserved domains or your organization's actual domains in documentation and internal documents.
+        </p>
+    </div>
+</body>
+</html>
